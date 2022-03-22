@@ -1,0 +1,36 @@
+header.header
+	.container 
+		.row
+			.col
+				.mobile-header
+					img.mobile-header__logo(src="img/logo_header.png", alt="logo")
+					button.open-menu
+						i.fa-solid.fa-bars
+				.header__box
+					button.close-menu.visible-992 
+						i.fa-solid.fa-xmark
+					img.header__logo(src="img/logo_header.png", alt="logo")
+					ul.header__menu.menu
+						each item, hrefs in {index:'Услуги', page2:'О нас', page3:'Контакты'}
+							li.menu__item
+								a.menu__link(href=""+ hrefs +".html")= '' + item
+					.header__block 
+						form.header__language.language(action="#")
+							select.language__select(name="lang")
+								option(value="ru") RU
+								option(value="en") EN
+						form.header__search.search(action="#") 
+							input.search__input(type="text" placeholder="Поиск")
+							button.search__button 
+								i.fa-solid.fa-magnifying-glass
+						.header__social.social
+							a.social__link(href="/")
+								img.social__icon(src="img/icon_email.png", alt="icon_email")
+							a.social__link(href="/")
+								img.social__icon(src="img/icon_telegram.png", alt="icon_telegram")
+							a.social__link(href="/")
+								img.social__icon(src="img/icon_whatsapp.png", alt="icon_whatsapp")
+						a.header__phone(href="tel:+74955325533") +7 495 532-55-33
+						button.button.header__button
+							img.button__icon(src="img/icon_plane_white.png", alt="icon_plane_white")
+							span.button__text забронировать самолет

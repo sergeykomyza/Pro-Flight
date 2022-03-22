@@ -1,0 +1,16 @@
+mixin aircraftSlide(name, descr, img, val1, val2, val3)
+	article.plane
+		h6.plane__title #{name} 
+		p.plane__descr #{descr}
+		img.plane__img(src="img/" + img, alt="")
+		ul.charact
+			li.charact__item 
+				span.charact__data Дальность полета
+				b.charact__val #{val1} км
+			li.charact__item 
+				span.charact__data Количество мест
+				b.charact__val #{val2}
+			li.charact__item 
+				span.charact__data Тип
+				b.charact__val #{val3} 
+		button.button.plane__button забронировать

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Site | MainPage
+	body
+		//- mixins
+		include ./../mixins/_aircraftSlide.pug
+		include ./../mixins/_post.pug
+		include ./../mixins/_mixin3.pug
+		include ./../mixins/_mixin4.pug
+		include ./../mixins/_mixin5.pug
+		// ======================================== HEADER
+		include ./../sections/_header.pug
+		.main-page
+			// ======================================== SECTION
+			section.home 
+				.container 
+					.row 
+						.col 
+							.home__block
+								.home__titles
+									h1.home__title Бизнес Авиация
+									p.home__tagtitle организация полетов
+										br
+										| и забота о вас 24/7
+								#rent-0
+									include ./../layouts/_tickets.pug
+							#rent-1
+								include ./../layouts/_rent.pug				
+			// ======================================== ПРЕИМУЩЕСТВА
+			include ./../sections/_advantages.pug
+			// ======================================== КАК ЭТО РАБОТАЕТ
+			include ./../sections/_steps.pug
+			// ======================================== ВЫ МОЖЕТЕ АРЕНДОВАТЬ
+			include ./../sections/_aircrafts.pug
+			// ======================================== ПОЧЕМУ СТОИТ ВЫБРАТЬ КОМПАНИЮ PRO-FLIGHT
+			include ./../sections/_cause.pug
+			// ======================================== ПОДПИШИТЕСЬ НА РАССЫЛКУ
+			include ./../sections/_subscription.pug
+			// ======================================== 
+			include ./../sections/_advertising.pug
+			// ======================================== БЛОГ
+			include ./../sections/_blog.pug
+			// ======================================== ПОДПИШИСЬ НА НАШ ТЕЛЕГРАМ
+			include ./../sections/_subscriptionTelegram.pug
+			// ======================================== УМНЫЕ РЕШЕНИЯ
+			include ./../sections/_solutions.pug
+		// ======================================== FOOTER
+		include ./../sections/_footer.pug
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug
+
+

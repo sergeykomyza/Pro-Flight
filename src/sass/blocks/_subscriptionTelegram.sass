@@ -1,0 +1,38 @@
+.telegram-subscription
+	background: url('../img/order_bg.jpg') center center/cover no-repeat
+	&__box
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		height: 383px
+		padding: 92px 0 0 0
+	&__title
+		margin: 0 0 14px 0
+		font-family: $font-2
+		font-size: 30px
+		color: #fff
+		text-transform: uppercase
+	&__text
+		margin: 0 0 48px 0
+		padding: 0 0 0 0
+		font-size: 18px
+		color: #fff
+		background-color: rgb(147, 97, 35, 0.9)
+		letter-spacing: 0.3px
+	&__button
+		@extend .subscription__button
+	&__img
+		position: absolute
+		bottom: 0
+		right: 0
+
+@media screen and ( max-width: 992px )
+	.telegram-subscription
+		&__box
+			height: auto
+			padding: 50px 0
+		&__title
+			font-size: 25px
+		&__img
+			display: none

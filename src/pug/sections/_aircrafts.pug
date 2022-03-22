@@ -1,0 +1,16 @@
+section.aircrafts
+	img.decor(src="img/lines.png", alt="lines")
+	.container 
+		.row 
+			.col 
+				.logo-titles
+					img.logo-titles__img(src="img/icon_pic_plane.png", alt="icon_pic_plane")
+					h4.logo-titles__text вы можете арендовать
+				.aircrafts__slider
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('gulfstream g-600', 'Небольшое описание самолета и возможностей', 'rent_2.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('cessna citation cc', 'Небольшое описание самолета и возможностей', 'rent_3.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('embraer legacy', 'Небольшое описание самолета и возможностей', 'rent_4.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+				button.aircrafts__button.button--black смотреть весь флот
+

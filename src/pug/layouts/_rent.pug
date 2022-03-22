@@ -1,0 +1,33 @@
+.home__rent.rent
+	.rent__header
+		button.rent__toggle
+			img(src="img/icon_chair.png", alt="icon_chair")
+			span арендовать кресло
+		button.rent__toggle
+			img(src="img/icon_plane_gold.png", alt="icon_plane_gold")
+			span арендовать самолет
+	.rent__contents
+		.rent__content
+			form.form-rent(action="#")
+				.form-rent__col
+					input.form-rent__field(type="text" placeholder="Откуда *")
+					button.form-rent__switch 
+						img(src="img/switch.png", alt="switch")
+					input.form-rent__field(type="text" placeholder="Куда *")
+					.form-rent__field.pass Пассажиры
+						.count 
+							button -
+							input(type="text" value="1")
+							button +
+					input.form-rent__field(type="text" placeholder="Имя *")
+
+				.form-rent__col
+					.calendar
+						input.form-rent__field(type="text" placeholder="Дата *")
+						img(src="img/icon_date.png", alt="")
+					.back 
+						input#check(type="checkbox")
+						label.back__label(for="check") Обратный перелет
+					input.form-rent__field(type="text" placeholder="Телефон *")
+					button.button.form-rent__button оставить заявку
+		.rent__content

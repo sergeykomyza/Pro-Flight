@@ -1,0 +1,53 @@
+.steps
+	height: 1030px
+	padding: 135px 0 0 0
+	background: url('../img/section_bg_02.jpg') center -300px no-repeat
+	&__title
+		margin: 0 0 40px 0
+		font-family: $font-2
+		font-size: 30px
+		color: #FFF
+		letter-spacing: 0.8px
+		text-transform: uppercase
+		text-align: center
+	&__items
+		display: flex
+		justify-content: space-between
+
+.step
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 260px
+	height: 300px
+	margin: 0 0 15px 0
+	padding: 45px 24px 20px 24px
+	text-align: center
+	background: #FFF
+	border-radius: 10px
+	&__img
+		width: 80px
+		height: 80px
+		object-fit: contain
+		margin: 0 0 26px 0
+	&__text
+		margin: 0 0 0 0
+		font-size: 18px
+	&__button
+		margin: auto auto 0 auto
+
+@media screen and ( max-width: 1100px )
+	.step
+		width: 240px
+		&__button
+			width: 190px
+
+@media screen and ( max-width: 992px )
+	.steps
+		height: auto
+		padding: 135px 0 0 0
+		background: url('../img/section_bg_02.jpg') center bottom/cover no-repeat
+		&__items
+			flex-direction: column
+	.step
+		width: 100%

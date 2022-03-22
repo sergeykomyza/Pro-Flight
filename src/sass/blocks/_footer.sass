@@ -1,0 +1,146 @@
+.footer
+	height: 770px
+	padding: 113px 0 0 0
+	color: #FFF
+	background: $black
+	&__box
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		margin: 0 0 20px 0
+	&__present
+	&__logo
+		margin: 0 0 37px 0
+	&__text
+		margin: 0 0 63px 0
+		line-height: 20px
+	&__social
+		margin: 0 0 20px 0
+	&__adress
+	&__button
+		@extend .header__button
+		width: 200px
+		margin: 3px 0 0 74px
+	&-menu
+		padding: 12px 0 0 75px
+		&__item
+			margin: 0 0 24px 0
+		&__link
+			font-family: $font-3
+			font-size: 18px
+			text-transform: uppercase
+			&:hover
+				color: #936123
+	&__phone
+		font-family: $font-2
+		color: #936123
+
+.services-menu
+	padding: 13px 0 0 42px
+	&__title
+		margin: 0 0 30px 0
+		font-family: $font-2
+	&__item
+		margin: 0 0 28px 0
+	&__link
+		&:hover
+			color: #936123
+
+.network
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 0 33px 0
+	&__link
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 50px
+		height: 50px
+		margin: 0 10px
+		background: #d49d57
+		border-radius: 50%
+		&:hover
+			background: $black
+		i
+			font-size: 25px
+			color: #FFF
+
+.pays
+	display: flex
+	flex-direction: column
+	justify-content: center
+	text-align: center
+	margin: 0 0 28px 0
+	&__title
+		margin: 0 0 30px 0
+		font-family: $font-2
+		letter-spacing: 0.7px
+	&__items
+	&__link
+		margin: 0 5px
+
+.technical-menu
+	display: flex
+	width: 100%
+	padding: 12px 0 0 0
+	border-top: 1px solid #d49d57
+	&__item
+		margin: 0 29px 0 0
+		&:last-child
+			position: relative
+			z-index: 1
+			margin: 0 0 0 auto
+		&:last-child .technical-menu__link
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			img
+				display: block
+				margin: 20px 0 0 0
+	&__link
+		font-family: $font-3
+		font-size: 11px
+		color: #FFF
+		&:hover
+			color: #936123
+
+.rights
+	position: relative
+	display: flex
+	margin: -28px 0 0 0
+	font-size: 11px
+	color: #d49d57
+
+@media screen and ( max-width: 1100px )
+	.footer
+		height: auto
+		padding: 50px 0
+		&-menu
+			padding: 0
+	.technical-menu
+		flex-direction: column
+		padding: 0
+		&__item
+			&:last-child 
+				margin: 0 0 20px 0
+			&:last-child .technical-menu__link
+				align-items: flex-start
+	.rights
+		margin: 0 0 0 0
+
+@media screen and ( max-width: 992px )
+	.footer
+		&__box
+			grid-template-columns: repeat(1, 1fr)
+		&__present
+			margin: 0 0 20px 0
+		&__text
+			margin: 0 0 20px 0
+		&__button
+			margin: 0 0 0 0
+	.services-menu
+		padding: 0 0 0 0
+	.network
+		justify-content: flex-start
+	.pays
+		align-items: flex-start

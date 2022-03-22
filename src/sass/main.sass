@@ -1,0 +1,181 @@
+@import 'blocks/fonts'
+@import 'blocks/vars'
+
+/* ===================================================================*/
+/* ====================================================== main styles */ 
+/*====================================================================*/
+*,
+p,
+h1,h2,h3,h4,h5,h6
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	line-height: normal
+
+html 
+	overflow-x: hidden
+
+body
+	padding: 70px 0 0 0
+	font-family: $font-1
+	font-size: 16px
+	color: $black
+	overflow-x: hidden
+
+ul 
+	margin: 0
+	padding: 0
+	list-style: none
+
+a 
+	color: inherit
+	text-decoration: none
+	&:hover
+		color: inherit
+		text-decoration: none
+
+button 
+	background: transparent
+	border: none
+	outline: none
+	cursor: pointer
+	&:focus
+		outline: none
+
+input
+	outline: none
+
+section
+	position: relative
+
+.button
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 210px
+	height: 50px
+	font-family: $font-2
+	font-size: 15px
+	color: #FFF	
+	letter-spacing: -1.4px
+	text-transform: uppercase
+	background: linear-gradient( 60deg, rgb(197,129,55) 0%, rgb(195,138,64) 50%, rgb(212,157,87) 100%)
+	border-radius: 5px
+	box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.25)
+	cursor: pointer
+	&:hover
+		background: linear-gradient( 60deg, rgb(212,157,87) 100%, rgb(195,138,64) 10%, rgb(197,129,55) 0% )
+	&__icon
+		margin: 0 12px 0 0
+	&--black
+		@extend .button
+		background: $black
+
+.logo-titles
+	position: relative
+	padding: 0 0 0 52px
+	&__img
+		position: absolute
+		top: -15px
+		left: 0
+	&__text
+		font-family: $font-2
+		font-size: 30px
+		letter-spacing: 0.9px
+		text-transform: uppercase
+
+.decor
+	position: absolute
+	bottom: -130px
+	left: 50%
+	transform: translateX(-50%)
+.decor-2
+	position: absolute
+	z-index: 1
+	bottom: -201px
+	left: 50%
+	transform: translateX(-50%)
+
+// переопределить ширину контейнера bootstrap
+.container
+	max-width: 1124px
+
+.visible-992
+	display: none
+
+@media screen and ( max-width: 992px )
+	.visible-992
+		display: block
+	.hidden-992
+		display: none
+	.logo-titles
+		&__text
+			font-size: 23px
+
+/* ============================================================= HEADER */
+@import 'blocks/header'
+/* ============================================================= SECTION */
+.home
+	height: 760px
+	padding: 35px 0
+	background: url('../img/home_banner.jpg') center bottom/cover no-repeat
+	&__block
+		display: flex
+		margin: 0 0 13px 0
+		padding: 0 0 0 8px
+	&__titles
+		width: 50%
+		padding: 90px 0 0 0
+		font-family: $font-3
+		color: #FFF
+	&__title
+		margin: 0 0 16px 0
+		font-size: 90px
+		line-height: 0.889
+	&__tagtitle
+		font-size: 32px
+		text-transform: uppercase
+
+@media screen and ( max-width: 992px )
+	.home
+		height: auto
+		&__block
+			flex-direction: column
+			padding: 0 0 0 0
+		&__titles
+			padding: 0
+
+@media screen and ( max-width: 565px )
+	.home
+		&__titles
+			width: 100%
+			margin: 0 0 20px 0
+		&__title
+			font-size: 65px
+		&__tagtitle
+			font-size: 22px
+
+/* ============================================================= ФОРМА АРЕНДЫ */
+@import 'blocks/rent'
+/* ============================================================= АРЕНДА БИЛЕТОВ */
+@import 'blocks/tickets'
+/* ============================================================= ПРЕИМУЩЕСТВА */
+@import 'blocks/advantages'
+/* ============================================================= КАК ЭТО РАБОТАЕТ */
+@import 'blocks/steps'
+/* ============================================================= ВЫ МОЖЕТЕ АРЕНДОВАТЬ */
+@import 'blocks/aircrafts'
+/* ============================================================= ПОЧЕМУ СТОИТ ВЫБРАТЬ КОМПАНИЮ PRO-FLIGHT */
+@import 'blocks/cause'
+/* ============================================================= ПОДПИШИТЕСЬ НА РАССЫЛКУ */
+@import 'blocks/subscription'
+/* =============================================================  */
+@import 'blocks/advertising'
+/* =============================================================  БЛОГ*/
+@import 'blocks/blog'
+/* =============================================================  ПОДПИШИСЬ НА НАШ ТЕЛЕГРАМ*/
+@import 'blocks/subscriptionTelegram'
+/* ============================================================= УМНЫЕ РЕШЕНИЯ*/
+@import 'blocks/solutions'
+/* ============================================================= FOOTER */
+@import 'blocks/footer'

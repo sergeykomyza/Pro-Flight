@@ -1,0 +1,75 @@
+.blog
+	height: 1385px
+	background: url('../img/section_bg_05.jpg') center center/cover no-repeat
+	padding: 80px 0 0 0
+	&__items
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		gap: 55px 81px
+		margin: 55px 0 80px 0
+	&__button
+		margin: 0 auto
+
+.post
+	// width: 510px
+	background: #FFF
+	border-radius: 10px
+	overflow: hidden
+	&__img
+		position: relative
+		width: 100%
+		height: 260px
+		margin: 0 0 0 0
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__date
+		position: absolute
+		bottom: 0
+		left: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 120px
+		height: 30px
+		font-family: $font-2
+		font-size: 12px
+		color: #FFF
+		background: linear-gradient(54.53deg, #c58137 83.6%, rgba(255, 255, 255, 0) 52.6%), transparent
+	&__info
+		display: flex
+		flex-direction: column
+		height: 190px
+		padding: 26px 25px 21px 22px
+	&__title
+		margin: 0 0 12px 0
+		font-family: $font-2
+		font-size: 18px
+		text-transform: uppercase
+		letter-spacing: -1px
+	&__text
+		margin: 0 0 15px 0
+	&__button
+		display: block
+		width: 100%
+		height: 50px
+		margin: auto 0 0 0
+		font-family: $font-2
+		font-size: 15px
+		text-transform: uppercase
+		border-radius: 5px
+		border: 1px solid #dbdbdb
+		background: #ededed
+		letter-spacing: -0.9px
+
+@media screen and ( max-width: 992px )
+	.blog
+		height: auto
+		padding: 50px 0
+		&__items
+			grid-template-columns: repeat(1, 1fr)
+			gap: 15px 0
+	.post
+		&__info
+			height: auto

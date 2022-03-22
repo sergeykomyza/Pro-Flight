@@ -1,0 +1,68 @@
+footer.footer 
+	.container 
+		.row 
+			.col 
+				.footer__box
+					.footer__present 
+						img.footer__logo(src="img/logo_footer.png", alt="logo_footer")
+						p.footer__text Ваш брокер в бизнес-авиации №1 Организуем и решим авиационные задачи любой сложности.
+						.footer__social.social 
+							a.social__link(href="/")
+								img.social__icon(src="img/icon_telegram.png", alt="icon_telegram")
+							a.social__link(href="/")
+								img.social__icon(src="img/icon_whatsapp.png", alt="icon_whatsapp")
+							a.footer__phone(href="tel:+74955325533") +7 495 532-55-33
+						.footer__adress Москва, ул. Академика Королева, 15 Офис 157
+					ul.footer-menu
+						each item, hrefs in {about:'о нас', services:'услуги', flot:'ваш флот', direction:'направления', information:'информация', contacts:'контакты'}
+							li.footer-menu__item
+								a.footer-menu__link(href=""+ hrefs +".html")= '' + item
+					ul.services-menu
+						li.services-menu__title Услуги:
+						each item, hrefs in {link1:'Jet Sharing', link2:'Аренда частного самолета', link3:'Корпоративный чартер', link4:'Заказ чартера', link5:'Государственным корпорациям', link6:'VIP чартер'}
+							li.services-menu__item
+								a.services-menu__link(href=""+ hrefs +".html")= '' + item
+					button.button.footer__button
+						img.button__icon(src="img/icon_plane_white.png", alt="icon_plane_white")
+						span.button__text забронировать самолет
+				.network 
+					a.network__link(href="#")
+						i.fa-brands.fa-facebook-f
+					a.network__link(href="#")
+						i.fa-brands.fa-instagram
+					a.network__link(href="#")
+						i.fa-brands.fa-youtube
+				.pays
+					p.pays__title принимаем к оплате:
+					.pays__items
+						a.pays__link(href="#")
+							img(src="img/icon_pay_1.png", alt="icon_pay_1")
+						a.pays__link(href="#")
+							img(src="img/icon_pay_2.png", alt="icon_pay_1")
+						a.pays__link(href="#")
+							img(src="img/icon_pay_3.png", alt="icon_pay_1")
+						a.pays__link(href="#")
+							img(src="img/icon_pay_4.png", alt="icon_pay_1")
+						a.pays__link(href="#")
+							img(src="img/icon_pay_5.png", alt="icon_pay_1")
+						a.pays__link(href="#")
+							img(src="img/icon_pay_6.png", alt="icon_pay_1")
+				ul.technical-menu
+					li.technical-menu__item
+						a.technical-menu__link(href="#") Политика конфиденциальности
+					li.technical-menu__item
+						a.technical-menu__link(href="#") Согласие на обработку персональных данных
+					li.technical-menu__item
+						a.technical-menu__link(href="#") Пользовательское соглашение
+					li.technical-menu__item
+						a.technical-menu__link(href="#") Условия договора
+					li.technical-menu__item
+						a.technical-menu__link(href="#") Карта сайта
+					li.technical-menu__item
+						span.technical-menu__link Разработка и продвижение сайта студия 
+							br
+							a(href="#") 
+								<img src="img/logo_scrum.png" alt="logo_scrum">
+			.row
+				.col
+					span.rights © 2012-2022 Pro-Flight.ru

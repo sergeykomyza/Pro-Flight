@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- custom styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Site | MainPage</title>
+  </head>
+  <body>
+    <!-- ======================================== HEADER-->
+    <header class="header">
+      <div class="container"> 
+        <div class="row">
+          <div class="col">
+            <div class="mobile-header"><img class="mobile-header__logo" src="img/logo_header.png" alt="logo"/>
+              <button class="open-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="header__box">
+              <button class="close-menu visible-992"> <i class="fa-solid fa-xmark"></i></button><img class="header__logo" src="img/logo_header.png" alt="logo"/>
+              <ul class="header__menu menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Услуги</a></li>
+                <li class="menu__item"><a class="menu__link" href="page2.html">О нас</a></li>
+                <li class="menu__item"><a class="menu__link" href="page3.html">Контакты</a></li>
+              </ul>
+              <div class="header__block"> 
+                <form class="header__language language" action="#">
+                  <select class="language__select" name="lang">
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                  </select>
+                </form>
+                <form class="header__search search" action="#"> 
+                  <input class="search__input" type="text" placeholder="Поиск"/>
+                  <button class="search__button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="header__social social"><a class="social__link" href="/"><img class="social__icon" src="img/icon_email.png" alt="icon_email"/></a><a class="social__link" href="/"><img class="social__icon" src="img/icon_telegram.png" alt="icon_telegram"/></a><a class="social__link" href="/"><img class="social__icon" src="img/icon_whatsapp.png" alt="icon_whatsapp"/></a></div><a class="header__phone" href="tel:+74955325533">+7 495 532-55-33</a>
+                <button class="button header__button"><img class="button__icon" src="img/icon_plane_white.png" alt="icon_plane_white"/><span class="button__text">забронировать самолет</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-page">
+      <!-- ======================================== SECTION-->
+      <section class="home"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="home__block">
+                <div class="home__titles">
+                  <h1 class="home__title">Бизнес Авиация</h1>
+                  <p class="home__tagtitle">организация полетов<br/>и забота о вас 24/7</p>
+                </div>
+                <div id="rent-0">
+                  <div class="home__tickets tickets">
+                    <div class="tickets__title">jet sharing</div>
+                    <div class="tickets__header">
+                      <button class="tickets__toggle"><img src="img/icon_chair.png" alt="icon_chair"/><span>арендовать кресло</span></button>
+                      <button class="tickets__toggle"><img src="img/icon_plane_gold.png" alt="icon_plane_gold"/><span>арендовать самолет</span></button>
+                    </div>
+                    <div class="tickets__contents">
+                      <div class="tickets__content"> 
+                        <div class="tickets__items"> 
+                          <div class="ticket"> 
+                            <div class="ticket__time">04 <br/><b>мар</b></div>
+                            <div class="ticket__body route"> 
+                              <div class="route__where">Москва<br/><span>VKO </span></div><img class="route__icon" src="img/icon_plane_gold.png" alt="icon_plane_gold"/>
+                              <div class="route__where">Ницца<br/><span>NCE </span></div>
+                            </div>
+                            <div class="ticket__price">от<br/><b>€5 500</b></div>
+                          </div>
+                          <div class="ticket"> 
+                            <div class="ticket__time">04 <br/><b>мар</b></div>
+                            <div class="ticket__body route"> 
+                              <div class="route__where">Москва<br/><span>VKO </span></div><img class="route__icon" src="img/icon_plane_gold.png" alt="icon_plane_gold"/>
+                              <div class="route__where">Ницца<br/><span>NCE </span></div>
+                            </div>
+                            <div class="ticket__price">от<br/><b>€5 500</b></div>
+                          </div>
+                          <div class="ticket"> 
+                            <div class="ticket__time">04 <br/><b>мар</b></div>
+                            <div class="ticket__body route"> 
+                              <div class="route__where">Москва<br/><span>VKO </span></div><img class="route__icon" src="img/icon_plane_gold.png" alt="icon_plane_gold"/>
+                              <div class="route__where">Ницца<br/><span>NCE </span></div>
+                            </div>
+                            <div class="ticket__price">от<br/><b>€5 500</b></div>
+                          </div>
+                          <div class="ticket"> 
+                            <div class="ticket__time">04 <br/><b>мар</b></div>
+                            <div class="ticket__body route"> 
+                              <div class="route__where">Москва<br/><span>VKO </span></div><img class="route__icon" src="img/icon_plane_gold.png" alt="icon_plane_gold"/>
+                              <div class="route__where">Ницца<br/><span>NCE </span></div>
+                            </div>
+                            <div class="ticket__price">от<br/><b>€5 500</b></div>
+                          </div>
+                        </div>
+                        <button class="button tickets__button">посмотреть все</button>
+                      </div>
+                      <div class="tickets__content">asdf</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="rent-1">
+                <div class="home__rent rent">
+                  <div class="rent__header">
+                    <button class="rent__toggle"><img src="img/icon_chair.png" alt="icon_chair"/><span>арендовать кресло</span></button>
+                    <button class="rent__toggle"><img src="img/icon_plane_gold.png" alt="icon_plane_gold"/><span>арендовать самолет</span></button>
+                  </div>
+                  <div class="rent__contents">
+                    <div class="rent__content">
+                      <form class="form-rent" action="#">
+                        <div class="form-rent__col">
+                          <input class="form-rent__field" type="text" placeholder="Откуда *"/>
+                          <button class="form-rent__switch"> <img src="img/switch.png" alt="switch"/></button>
+                          <input class="form-rent__field" type="text" placeholder="Куда *"/>
+                          <div class="form-rent__field pass">Пассажиры
+                            <div class="count"> 
+                              <button>-</button>
+                              <input type="text" value="1"/>
+                              <button>+</button>
+                            </div>
+                          </div>
+                          <input class="form-rent__field" type="text" placeholder="Имя *"/>
+                        </div>
+                        <div class="form-rent__col">
+                          <div class="calendar">
+                            <input class="form-rent__field" type="text" placeholder="Дата *"/><img src="img/icon_date.png" alt=""/>
+                          </div>
+                          <div class="back"> 
+                            <input id="check" type="checkbox"/>
+                            <label class="back__label" for="check">Обратный перелет</label>
+                          </div>
+                          <input class="form-rent__field" type="text" placeholder="Телефон *"/>
+                          <button class="button form-rent__button">оставить заявку</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="rent__content"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ПРЕИМУЩЕСТВА-->
+      <section class="advantages"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col">
+              <div class="advantages__box"> 
+                <div class="advantages__content">
+                  <div class="logo-titles"> <img class="logo-titles__img" src="img/icon_pic_plane.png" alt="icon_pic_plane"/>
+                    <h2 class="logo-titles__text">преимущества </h2>
+                  </div>
+                  <ul class="advantages__list">
+                    <li class="advantages__item">Организуем перелет в любую точку мира <br/>Срочный вылет <b>от 3-х часов</b></li>
+                    <li class="advantages__item">Персональный менеджер<br/><b>на связи 24/7</b></li>
+                    <li class="advantages__item">Доступ к бортам всего мира</li>
+                    <li class="advantages__item"><b>Подберем оптимальный вариант</b> <br/>учитывая ваши потребности</li>
+                    <li class="advantages__item"><b>Конфиденциально - </b> гарантируем анонимность</li>
+                    <li class="advantages__item"><b>Собственные представители </b> в аэропортах<br/>Москвы, Санкт-Петербурга, Сочи, Екатеринбурга, <br/>Нижнего Новгорода и Геленджика</li>
+                    <li class="advantages__item">Мы не только <b>организуем Ваш полет на </b><br/><b>высочайшем уровне </b>. Мы заботимся о вас!</li>
+                  </ul><img class="advantages__plane" src="img/plane_pic.webp" alt="plane_pic"/>
+                </div>
+                <div class="advantages__imgs"><img class="advantages__img" src="img/figure_pic.webp" alt="figure_pic"/>
+                  <div class="pic"> 
+                    <div class="pic__title">Ваш комфорт - <b>наша забота</b></div><img class="pic__img" src="img/advantages_pic.png" alt="advantages_pic"/>
+                  </div><a class="pdf" href="">
+                    <div class="pdf__text"> 
+                      <p class="pdf__download">Скачать презентацию</p><span class="pdf__size">PDF - 7.53 Mb</span>
+                    </div><img class="pdf__icon" src="img/icon-pdf.png" alt="icon-pdf"/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== КАК ЭТО РАБОТАЕТ-->
+      <section class="steps">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col">
+              <h3 class="steps__title">как это работает</h3>
+              <div class="steps__items"> 
+                <div class="step"> <img class="step__img" src="img/icon_working_1.png" alt="icon_working_1"/>
+                  <p class="step__text">Вы оставляете заявку любым удобным способом</p>
+                  <button class="step__button button">оставить заявку</button>
+                </div>
+                <div class="step"> <img class="step__img" src="img/icon_working_2.png" alt="icon_working_1"/>
+                  <p class="step__text">Наш менеджер связывается с Вами и уточняет все детали и пожелания</p>
+                </div>
+                <div class="step"> <img class="step__img" src="img/icon_working_3.png" alt="icon_working_1"/>
+                  <p class="step__text">Мы подбираем варианты. После вашего утверждения, организуем весь процесс перелета "Под ключ"</p>
+                </div>
+                <div class="step"> <img class="step__img" src="img/icon_working_4.png" alt="icon_working_1"/>
+                  <p class="step__text">Мы контролируем весь процесс перелета. Окутывая вас заботой и вниманием.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ВЫ МОЖЕТЕ АРЕНДОВАТЬ-->
+      <section class="aircrafts"><img class="decor" src="img/lines.png" alt="lines"/>
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="logo-titles"><img class="logo-titles__img" src="img/icon_pic_plane.png" alt="icon_pic_plane"/>
+                <h4 class="logo-titles__text">вы можете арендовать</h4>
+              </div>
+              <div class="aircrafts__slider">
+                    <article class="plane">
+                      <h6 class="plane__title">challenger </h6>
+                      <p class="plane__descr">Небольшое описание самолета и возможностей</p><img class="plane__img" src="img/rent_1.png" alt=""/>
+                      <ul class="charact">
+                        <li class="charact__item"> <span class="charact__data">Дальность полета</span><b class="charact__val">6019 км</b></li>
+                        <li class="charact__item"> <span class="charact__data">Количество мест</span><b class="charact__val">10 - 13</b></li>
+                        <li class="charact__item"> <span class="charact__data">Тип</span><b class="charact__val">Heavy jet </b></li>
+                      </ul>
+                      <button class="button plane__button">забронировать</button>
+                    </article>
+                    <article class="plane">
+                      <h6 class="plane__title">gulfstream g-600 </h6>
+                      <p class="plane__descr">Небольшое описание самолета и возможностей</p><img class="plane__img" src="img/rent_2.png" alt=""/>
+                      <ul class="charact">
+                        <li class="charact__item"> <span class="charact__data">Дальность полета</span><b class="charact__val">6019 км</b></li>
+                        <li class="charact__item"> <span class="charact__data">Количество мест</span><b class="charact__val">10 - 13</b></li>
+                        <li class="charact__item"> <span class="charact__data">Тип</span><b class="charact__val">Heavy jet </b></li>
+                      </ul>
+                      <button class="button plane__button">забронировать</button>
+                    </article>
+                    <article class="plane">
+                      <h6 class="plane__title">cessna citation cc </h6>
+                      <p class="plane__descr">Небольшое описание самолета и возможностей</p><img class="plane__img" src="img/rent_3.png" alt=""/>
+                      <ul class="charact">
+                        <li class="charact__item"> <span class="charact__data">Дальность полета</span><b class="charact__val">6019 км</b></li>
+                        <li class="charact__item"> <span class="charact__data">Количество мест</span><b class="charact__val">10 - 13</b></li>
+                        <li class="charact__item"> <span class="charact__data">Тип</span><b class="charact__val">Heavy jet </b></li>
+                      </ul>
+                      <button class="button plane__button">забронировать</button>
+                    </article>
+                    <article class="plane">
+                      <h6 class="plane__title">embraer legacy </h6>
+                      <p class="plane__descr">Небольшое описание самолета и возможностей</p><img class="plane__img" src="img/rent_4.png" alt=""/>
+                      <ul class="charact">
+                        <li class="charact__item"> <span class="charact__data">Дальность полета</span><b class="charact__val">6019 км</b></li>
+                        <li class="charact__item"> <span class="charact__data">Количество мест</span><b class="charact__val">10 - 13</b></li>
+                        <li class="charact__item"> <span class="charact__data">Тип</span><b class="charact__val">Heavy jet </b></li>
+                      </ul>
+                      <button class="button plane__button">забронировать</button>
+                    </article>
+                    <article class="plane">
+                      <h6 class="plane__title">challenger </h6>
+                      <p class="plane__descr">Небольшое описание самолета и возможностей</p><img class="plane__img" src="img/rent_1.png" alt=""/>
+                      <ul class="charact">
+                        <li class="charact__item"> <span class="charact__data">Дальность полета</span><b class="charact__val">6019 км</b></li>
+                        <li class="charact__item"> <span class="charact__data">Количество мест</span><b class="charact__val">10 - 13</b></li>
+                        <li class="charact__item"> <span class="charact__data">Тип</span><b class="charact__val">Heavy jet </b></li>
+                      </ul>
+                      <button class="button plane__button">забронировать</button>
+                    </article>
+              </div>
+              <button class="aircrafts__button button--black">смотреть весь флот</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ПОЧЕМУ СТОИТ ВЫБРАТЬ КОМПАНИЮ PRO-FLIGHT-->
+      <section class="cause"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <h5 class="cause__title">Почему стоит выбрать компанию Pro-flight?</h5>
+              <div class="cause__box"> 
+                <div class="cause__col tiles">
+                  <div class="tile">
+                    <div class="tile__text"><b class="tile__text--big">20 лет +</b><br/>и более <span class="tile__text--gold">опыт</span> отдельных наших сотрудников в бизнес авиации</div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile__text"> <b class="tile__text--big">30 мин</b><br/>после приема заявки и вы будете иметь первое <span class="tile__text--gold">предложение с расчетами.</span></div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile__text"> <b class="tile__text--big">95%</b><br/>наших клиентов <span class="tile__text--gold">выбирают нас</span> снова.</div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile__text">
+                       уже <span class="tile__text--gold">через</span><br/><b class="tile__text--big">3 часа</b><br/>возможен <span class="tile__text--gold">вылет.</span> </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile__text"><b class="tile__text--big">7000</b><br/><span class="tile__text--gold">воздушных судов в</span><br/>нашем доступе</div>
+                  </div>
+                  <div class="tile tile--height">
+                    <div class="tile__text">
+                       у нас есть<br/><span class="tile__text--gold">собственные представительства</span> <br/><b class="tile__text--big">в 6 городах РФ</b><br/>и представители в большинстве аэропортах РФ и за рубежом</div>
+                  </div>
+                </div>
+                <div class="cause__col">
+                  <div class="orients">
+                    <div class="orient"> <b class="orient__title">Фокус на клиенте</b>
+                      <p class="orient__text">Мы ценим Ваше время и очень ответственно подходим к решению Ваших задач. Мы работаем для Вас!</p>
+                    </div>
+                    <div class="orient"> <b class="orient__title">Качество</b>
+                      <p class="orient__text">Мы ориентированы на высочайшее качество в каждом  аспекте нашей работы.</p>
+                    </div>
+                    <div class="orient"> <b class="orient__title">Внимание</b>
+                      <p class="orient__text">Мы очень внимательны к деталям и мелочам. Мы слышим, понимаем </p>
+                    </div>
+                    <div class="orient"> <b class="orient__title">Открытость </b>
+                      <p class="orient__text">Мы ценим Ваше доверие к нам.  Мы максимально честны с Вами на всех этапах сотрудничества.</p>
+                    </div>
+                    <div class="orient"> <b class="orient__title">Проактивность</b>
+                      <p class="orient__text">Мы всегда на шаг впереди в решении возможных проблем.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ПОДПИШИТЕСЬ НА РАССЫЛКУ-->
+      <section class="subscription"> 
+        <div class="container"> 
+          <div class="row">
+            <div class="col">
+              <div class="subscription__box"> 
+                <h6 class="subscription__title">подпишитесь на рассылку </h6>
+                <p class="subscription__tagtitle">и получите первым предложения на EMPTY LEGS</p>
+                <form class="subscription__form" action="#"> 
+                  <input class="subscription__input" type="text" placeholder="Имя *"/>
+                  <input class="subscription__input" type="text" placeholder="E-mail *"/>
+                  <button class="subscription__button button--black">отправить </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== -->
+      <div class="advertising"> <img class="decor-2" src="img/lines-2.png" alt="lines"/><img class="advertising__pic" src="img/pic_02.png" alt="pic"/><img class="advertising__img" src="img/pic_01.jpg" alt="pic"/>
+        <div class="advertising__info"> <img class="advertising__logo" src="img/logo_header.png" alt="logo-header"/>
+          <p class="advertising__text">С нами ваш перелет будет таким, <br/>каким нужно вам!</p><b class="advertising__warning">Важно вам = важно нам</b>
+        </div>
+      </div>
+      <!-- ======================================== БЛОГ-->
+      <section class="blog"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="logo-titles"><img class="logo-titles__img" src="img/icon_pic_plane.png" alt="icon_pic_plane"/>
+                <h6 class="logo-titles__text">Pro-flight Блог</h6>
+              </div>
+              <div class="blog__items">
+                    <article class="post"> 
+                      <figure class="post__img"><img src="img/blog_01.png" alt="ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ"/>
+                        <div class="post__date">25.02.2022</div>
+                      </figure>
+                      <div class="post__info"> 
+                        <h6 class="post__title">ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ</h6>
+                        <p class="post__text">Короткое описание о чем речь и почему это важно. Возможно несколько предложений для привлечения внимания.</p>
+                        <button class="post__button">читать подробнее</button>
+                      </div>
+                    </article>
+                    <article class="post"> 
+                      <figure class="post__img"><img src="img/blog_02.png" alt="ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ"/>
+                        <div class="post__date">25.02.2022</div>
+                      </figure>
+                      <div class="post__info"> 
+                        <h6 class="post__title">ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ</h6>
+                        <p class="post__text">Короткое описание о чем речь и почему это важно. Возможно несколько предложений для привлечения внимания.</p>
+                        <button class="post__button">читать подробнее</button>
+                      </div>
+                    </article>
+                    <article class="post"> 
+                      <figure class="post__img"><img src="img/blog_03.png" alt="ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ"/>
+                        <div class="post__date">25.02.2022</div>
+                      </figure>
+                      <div class="post__info"> 
+                        <h6 class="post__title">ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ</h6>
+                        <p class="post__text">Короткое описание о чем речь и почему это важно. Возможно несколько предложений для привлечения внимания.</p>
+                        <button class="post__button">читать подробнее</button>
+                      </div>
+                    </article>
+                    <article class="post"> 
+                      <figure class="post__img"><img src="img/blog_04.png" alt="ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ"/>
+                        <div class="post__date">25.02.2022</div>
+                      </figure>
+                      <div class="post__info"> 
+                        <h6 class="post__title">ЗАГОЛОВОК СТАТЬИ БУДЕТ ЗДЕСЬ</h6>
+                        <p class="post__text">Короткое описание о чем речь и почему это важно. Возможно несколько предложений для привлечения внимания.</p>
+                        <button class="post__button">читать подробнее</button>
+                      </div>
+                    </article>
+              </div>
+              <button class="button blog__button">читать все статьи</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ПОДПИШИСЬ НА НАШ ТЕЛЕГРАМ-->
+      <section class="telegram-subscription">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="telegram-subscription__box">
+                <h6 class="telegram-subscription__title">подпишись <br/>на наш телеграмм канал</h6>
+                <p class="telegram-subscription__text">с актуальными предложениями по <b>JET SHARING</b></p>
+                <button class="telegram-subscription__button button--black">подписаться</button><img class="telegram-subscription__img" src="img/subscription_pic.png" alt="subscription_pic"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== УМНЫЕ РЕШЕНИЯ-->
+      <section class="solutions"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <p class="solutions__overtitle">Ваш брокер в бизнес-авиации, <br/>который предлагает</p>
+              <h6 class="solutions__title">Умные Решения</h6>
+              <div id="rent-2">
+                <div class="home__rent rent">
+                  <div class="rent__header">
+                    <button class="rent__toggle"><img src="img/icon_chair.png" alt="icon_chair"/><span>арендовать кресло</span></button>
+                    <button class="rent__toggle"><img src="img/icon_plane_gold.png" alt="icon_plane_gold"/><span>арендовать самолет</span></button>
+                  </div>
+                  <div class="rent__contents">
+                    <div class="rent__content">
+                      <form class="form-rent" action="#">
+                        <div class="form-rent__col">
+                          <input class="form-rent__field" type="text" placeholder="Откуда *"/>
+                          <button class="form-rent__switch"> <img src="img/switch.png" alt="switch"/></button>
+                          <input class="form-rent__field" type="text" placeholder="Куда *"/>
+                          <div class="form-rent__field pass">Пассажиры
+                            <div class="count"> 
+                              <button>-</button>
+                              <input type="text" value="1"/>
+                              <button>+</button>
+                            </div>
+                          </div>
+                          <input class="form-rent__field" type="text" placeholder="Имя *"/>
+                        </div>
+                        <div class="form-rent__col">
+                          <div class="calendar">
+                            <input class="form-rent__field" type="text" placeholder="Дата *"/><img src="img/icon_date.png" alt=""/>
+                          </div>
+                          <div class="back"> 
+                            <input id="check" type="checkbox"/>
+                            <label class="back__label" for="check">Обратный перелет</label>
+                          </div>
+                          <input class="form-rent__field" type="text" placeholder="Телефон *"/>
+                          <button class="button form-rent__button">оставить заявку</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="rent__content"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ======================================== FOOTER-->
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col"> 
+            <div class="footer__box">
+              <div class="footer__present"> <img class="footer__logo" src="img/logo_footer.png" alt="logo_footer"/>
+                <p class="footer__text">Ваш брокер в бизнес-авиации №1 Организуем и решим авиационные задачи любой сложности.</p>
+                <div class="footer__social social"> <a class="social__link" href="/"><img class="social__icon" src="img/icon_telegram.png" alt="icon_telegram"/></a><a class="social__link" href="/"><img class="social__icon" src="img/icon_whatsapp.png" alt="icon_whatsapp"/></a><a class="footer__phone" href="tel:+74955325533">+7 495 532-55-33</a></div>
+                <div class="footer__adress">Москва, ул. Академика Королева, 15 Офис 157</div>
+              </div>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="about.html">о нас</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="services.html">услуги</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="flot.html">ваш флот</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="direction.html">направления</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="information.html">информация</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">контакты</a></li>
+              </ul>
+              <ul class="services-menu">
+                <li class="services-menu__title">Услуги:</li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link1.html">Jet Sharing</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link2.html">Аренда частного самолета</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link3.html">Корпоративный чартер</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link4.html">Заказ чартера</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link5.html">Государственным корпорациям</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link6.html">VIP чартер</a></li>
+              </ul>
+              <button class="button footer__button"><img class="button__icon" src="img/icon_plane_white.png" alt="icon_plane_white"/><span class="button__text">забронировать самолет</span></button>
+            </div>
+            <div class="network"> <a class="network__link" href="#"><i class="fa-brands fa-facebook-f"></i></a><a class="network__link" href="#"><i class="fa-brands fa-instagram"></i></a><a class="network__link" href="#"><i class="fa-brands fa-youtube"></i></a></div>
+            <div class="pays">
+              <p class="pays__title">принимаем к оплате:</p>
+              <div class="pays__items"><a class="pays__link" href="#"><img src="img/icon_pay_1.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_2.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_3.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_4.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_5.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_6.png" alt="icon_pay_1"/></a></div>
+            </div>
+            <ul class="technical-menu">
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Политика конфиденциальности</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Согласие на обработку персональных данных</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Пользовательское соглашение</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Условия договора</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Карта сайта</a></li>
+              <li class="technical-menu__item"><span class="technical-menu__link">Разработка и продвижение сайта студия <br/><a href="#">
+                     <img src="img/logo_scrum.png" alt="logo_scrum"></a></span></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col"><span class="rights">© 2012-2022 Pro-Flight.ru</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======================================== SCRIPTS-->
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- fontawesome-->
+    <script src="https://kit.fontawesome.com/b8c912bc8c.js" crossorigin="anonymous"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- inputmask -->
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- yandex map-->
+    <!-- scripts-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

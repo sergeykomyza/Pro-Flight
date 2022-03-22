@@ -1,0 +1,182 @@
+.header
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+	width: 100%
+	background: #FFF
+	transition: all 0.3s
+	&__box
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 70px
+		background: #FFF
+	&__logo
+		display: block
+	&__block
+		display: flex
+		align-items: center
+	&__phone
+		margin: 0 0 0 6px
+		font-family: $font-2
+		letter-spacing: 0.2px
+	&__button
+		width: 170px
+		height: 40px
+		margin: 0 0 0 17px
+		padding: 0 0 0 7px
+		font-size: 13px
+		letter-spacing: -0.9px
+		text-align: left
+
+.menu
+	display: flex
+	align-items: center
+	&__item
+		margin: 0 18px
+	&__link
+		font-family: $font-2
+
+.search
+	position: relative
+	display: flex
+	justify-content: flex-end
+	width: 120px
+	height: 35px
+	margin: 0 10px 0 20px
+	&__input
+		position: absolute
+		right: 0
+		width: 100%
+		height: 100%
+		padding: 0 0 0 10px
+		font-size: 15px
+		border: none
+		border-radius: 5px
+		background: #f4f4f4
+		transition: all 0.3s
+		&--full
+			width: 350%
+	&__button
+		position: relative
+		z-index: 1
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-shrink: 0
+		width: 35px
+		height: 35px
+		border-radius: 0 5px 5px 0
+		background: #b7b7b7
+		i 
+			color: #FFF
+
+.social
+	display: flex
+	align-items: center
+	&__link
+		margin: 0 5px 0 0px
+	&__icon
+
+.close-menu
+	position: absolute
+	top: 10px
+	right: 15px
+	font-size: 30px
+
+.language
+	position: relative
+	z-inded: 100
+	display: flex
+	width: 50px
+	height: 35px
+	line-height: 3
+	background: #f4f4f4
+	overflow: hidden
+	border-radius: .25em
+	&::after
+		content: '\25BC'
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		padding: 0 3px
+		font-size: 11px
+		color: #FFF
+		background: #b7b7b7
+		pointer-events: none
+		transition: .25s all ease
+	&__select
+		-webkit-appearance:none
+		-moz-appearance:none
+		-ms-appearance:none
+		appearance:none
+		font-family: $font-2
+		outline:0
+		box-shadow:none
+		border:0!important
+		background: #f4f4f4
+		background-image: none
+		flex: 1
+		cursor: pointer
+		&::-ms-expand
+			display: none
+
+.open-menu
+	font-size: 30px
+
+.mobile-header
+	display: none
+
+@media screen and ( max-width: 1050px )
+	.menu
+		&__item
+			margin: 0 5px
+
+@media screen and ( max-width: 992px )
+	.header
+		&__box
+			position: fixed
+			right: -100%
+			top: 0
+			flex-direction: column
+			justify-content: flex-start
+			width: 100%
+			height: 100%
+			padding: 15px
+			transition: all 0.3s
+			&.active
+				right: 0
+		&__logo
+			margin: 0 auto 0 0
+		&__block
+			flex-direction: column
+			align-items: flex-end
+			width: 100%
+		&__phone
+			margin: 0 0 30px 0
+
+	.search
+		margin: 0 0 30px 0
+		&__input
+			&--full
+				width: 240%
+
+	.social
+		margin: 0 0 30px 0
+
+	.menu
+		flex-direction: column
+		align-items: flex-end
+		width: 100%
+		margin: 0 0 30px 0
+		&__item
+			margin: 0 0 10px 0
+
+	.mobile-header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 70px
+

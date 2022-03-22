@@ -1,0 +1,120 @@
+.rent
+	width: 100%
+	&__header
+		display: flex
+	&__toggle
+		@extend .tickets__toggle
+		width: 270px !important
+	&__contents
+		position: relative
+		z-index: 2
+	&__content
+		height: 190px
+		padding: 34px 40px 0 37px
+		background: #FFF
+		border-radius: 4px
+
+.form-rent
+	display: flex
+	justify-content: space-between
+	&__col
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: flex-start
+		width: 470px
+	&__field
+		width: 210px
+		height: 50px
+		margin: 0 0 22px 0
+		padding: 0 7px 0 17px
+		background: #f4f4f4
+		border: 1px solid #dddddd
+		border-radius: 5px
+	&__switch
+		display: flex
+		margin: 18px 0 0 0
+	&__button
+
+.pass
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.count
+	display: flex
+	align-items: center
+	width: 90px
+	height: 35px
+	font-family: $font-2
+	font-size: 20px
+	border-radius: 5px
+	background: #FFF
+	button
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 40%
+		color: #717171
+	input
+		width: 20%
+		text-align: center
+		border: none
+
+.calendar
+	position: relative
+	img
+		position: absolute
+		top: 10px
+		right: 15px
+
+.back
+	display: flex
+	align-items: center
+	width: 210px
+	height: 50px
+	margin: 0 0 22px 0
+	padding: 0 0 0 8px
+	&__label
+		display: flex
+		align-items: center
+		font-family: $font-2
+		font-size: 15px
+		&::before
+			content: ''
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 28px
+			height: 28px
+			margin: 0 10px 0 0
+			font-family: $font-2
+			font-size: 20px
+			background: #f4f4f4
+			border: 1px solid #dddddd
+			border-radius: 3px
+	input
+		display: none
+		&:checked + .back__label::before
+			content: '✔'
+
+@media screen and ( max-width: 992px )
+	.rent
+		&__content
+			height: auto
+			padding: 15px
+	.form-rent
+		flex-direction: column
+
+@media screen and ( max-width: 565px )
+	.rent
+		&__toggle
+			font-size: 13px
+	.form-rent
+		&__col
+			flex-direction: column
+			width: 100%
+		&__field
+			width: 100%
+		&__switch
+			margin: 0 0 22px 0
