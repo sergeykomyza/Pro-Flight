@@ -3,15 +3,17 @@ header.header
 		.row
 			.col
 				.mobile-header
-					img.mobile-header__logo(src="img/logo_header.png", alt="logo")
+					a(href="index.html") 
+						img.mobile-header__logo(src="img/logo_header.png", alt="logo")
 					button.open-menu
 						i.fa-solid.fa-bars
 				.header__box
 					button.close-menu.visible-992 
 						i.fa-solid.fa-xmark
-					img.header__logo(src="img/logo_header.png", alt="logo")
+					a.header__logo(href="index.html") 
+						img(src="img/logo_header.png", alt="logo")
 					ul.header__menu.menu
-						each item, hrefs in {index:'Услуги', page2:'О нас', page3:'Контакты'}
+						each item, hrefs in {services:'Услуги', about:'О нас', contacts:'Контакты'}
 							li.menu__item
 								a.menu__link(href=""+ hrefs +".html")= '' + item
 					.header__block 

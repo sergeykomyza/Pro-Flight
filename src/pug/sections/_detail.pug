@@ -1,0 +1,101 @@
+include ./../mixins/_detailItem.pug
+
+section.detail 
+	.container 
+		.row 
+			.col
+				include ./../layouts/_breadcrumbs.pug
+		.row 
+			.col 
+				.logo-titles.service__titles
+					img.logo-titles__img(src="img/icon_pic_plane.png", alt="icon_pic_plane")
+					h1.logo-titles__text Бизнес джет Lancer 321 Corporate Jet
+		.row
+			.col 
+				#jet
+					.jet
+						.jet__header
+							button.jet__toggle внешний вид
+							button.jet__toggle интерьер
+						.jet__contents 
+							.jet__content 
+								.jet__box
+									.jet-slider
+										.jet-slider__carousel
+											img.jet-slider__item(src="img/jet.jpg", alt="slide")
+											img.jet-slider__item(src="img/section_bg_06.jpg", alt="slide")
+											img.jet-slider__item(src="img/jet.jpg", alt="slide")
+										.jet-slider__navigation
+											button.jet-slider__arrow.jet-slider__arrow--left
+												img(src="img/icon_arrow_slider.png", alt="arrow")
+											button.jet-slider__arrow.jet-slider__arrow--right
+												img(src="img/icon_arrow_slider.png", alt="arrow")
+											.count-slide 
+												span.count-slide__cur 1
+												span.count-slide__dev /
+												span.count-slide__all 3
+									.jet-info 
+										.jet-info__top 
+											img(src="img/firm-logo.png", alt="firm-logo")
+											.jet-info__firm 
+												b.jet-info__name Airbus 
+												p.jet-info__count 10 самолетов
+										.brief-detail
+											b.brief-detail__name Категория
+											p.brief-detail__tagname Бизнес лайнеры (18 мест и более)
+											.detail__item 
+												b.detail__char Скорость
+												.detail__dots 
+												span.detail__val 900 км/ч
+											.detail__item 
+												b.detail__char Дальность
+												.detail__dots 
+												span.detail__val 11 100 км
+											.detail__item 
+												b.detail__char Вместимость
+												.detail__dots 
+												span.detail__val до 19 чел
+											.detail-price 
+												p.detail-price__title Стоимость аренды самолета
+												p.detail-price__val от 18 000 €/час
+											button.button.brief-detail__button арендовать самолет
+							.jet__content 1234
+
+section.full-detail 
+	.container 
+		.row 
+			.col 
+				h2.full-detail__title Летные и компановочные характеристики
+				.full-detail__box 
+					.full-detail__col 
+						p.full-detail__name Технические характеристики
+						+detailItem('Категория самолета:', 'Бизнес лайнеры (18 мест и более)')
+						+detailItem('Максимальная дальность полета:', '11 100 км')
+						+detailItem('Крейсерская скорость:', '900 км/ч')
+						+detailItem('Максимальная высота полета:', '12 500 м')
+						+detailItem('Максимальная взлетная масса:', '76 500 кг')
+						p.full-detail__name Размер самолета
+						+detailItem('Длина самолета:', '33,83 м')
+						+detailItem('Высота самолета:', '11,77 м')
+						+detailItem('Размах крыла:', '35,8 м')
+					.full-detail__col 
+						p.full-detail__name Характеристики салона
+						+detailItem('Максимальное количество пассажиров:', '19')
+						+detailItem('Оптимальное количество пассажиров:', '8')
+						+detailItem('Длина салона:', '24,01 м')
+						+detailItem('Ширина салона:', '24,01 м')
+						+detailItem('Высота салона:', '2,25 м')
+						+detailItem('Объем салона:', '199,88 куб.м')
+						+detailItem('Объем багажника:', '3,6 куб.м')
+						p.full-detail__name Цены
+						+detailItem('Цена аренды:', 'от 18 000 €/час')
+
+section.detail-description
+	.container 
+		.row 
+			.col 
+				h3.detail-description__title Описание
+				.detail-description__text
+					p Это бизнес-джет повышенной комфортности с повышенной дальностью полета.
+					p Среди дальнемагистральных салонных самолетов бизнес-класса одним из наиболее популярных признан Airbus 319 Corporate Jet. Это бизнес-джет с повышенной дальностью полета до 12 000 км. Заказать Airbus 319 Corporate Jet в компоновке VIP можно из расчета на оптимальное количество пассажиров – 8 человек. Но при необходимости он может быть трансформирован в пассажирский лайнер нормальной конфигурации с числом пассажиров 10-39 человек. Airbus 319 Corporate Jet разрабатывался как европейский конкурент флагманам Boeing Business Jet, Bombardier Global Express и Gulfstream V. Он был сертифицирован по требованиям ETOPS. Можно с уверенностью брать в аренду Airbus 319 Corporate Jet для продолжительных перелетов над океаном, его техническое оснащение и современная навигационная электроника гарантируют безопасность и комфорт пассажирам на борту.
+					p #[b Заказать и арендовать бизнес джет (Airbus 319 Corporate Jet)] по выгодной цене можно в нашем компании Pro-Flight, брокере бизнес-авиации №1 в России, позвонив по номеру +7 (495) 123-45-67 или заполнив заявку на нашем сайте. Работаем круглосуточно без выходных.

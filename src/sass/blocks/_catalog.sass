@@ -1,0 +1,78 @@
+.catalog
+	padding: 0 0 80px 0
+	background: #fafafa
+	&__titles
+		margin: 0 0 75px 0
+	&__items
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		gap: 20px
+		margin: 0 0 70px 0
+		.plane
+			margin: 0 0 0 0
+	&__button
+		margin: 0 auto
+
+.search-plane
+	margin: 0 0 42px 0
+	padding: 36px 46px
+	background: #FFF
+	&__title
+		margin: 0 0 20px 0
+		font-family: $font-2
+		font-size: 18px
+	&__group
+		display: flex
+		margin: 0 0 30px 0
+	&__input
+		width: 100%
+		height: 50px
+		margin: 0 30px 0 0
+		padding: 0 0 0 15px
+		font-family: $font-2
+		font-size: 15px
+		border-radius: 5px
+		border: 1px solid #dbdbdb
+		background: #ededed
+		&::placeholder
+			font-family: $font-1
+	&__button
+
+.choose-jets
+	font-size: 18px
+	b
+		margin: 0 23px 0 0
+		font-family: $font-2
+	a 
+		margin: 0 40px 0 0
+		&:hover
+			text-decoration: underline
+		
+@media screen and ( max-width: 1100px )
+	.catalog
+		&__items
+			grid-template-columns: repeat(3, 1fr)
+
+@media screen and ( max-width: 992px )
+	.catalog
+		&__items
+			grid-template-columns: repeat(2, 1fr)
+
+@media screen and ( max-width: 768px )
+	.search-plane
+		padding: 15px
+		&__group
+			flex-direction: column
+		&__input
+			margin: 0 0 20px 0
+	.jets
+		display: flex
+		flex-direction: column
+	.choose-jets
+		display: flex
+		flex-direction: column
+
+@media screen and ( max-width: 565px )
+	.catalog
+		&__items
+			grid-template-columns: repeat(1, 1fr)

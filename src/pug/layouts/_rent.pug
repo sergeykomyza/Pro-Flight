@@ -16,18 +16,17 @@
 					input.form-rent__field(type="text" placeholder="Куда *")
 					.form-rent__field.pass Пассажиры
 						.count 
-							button -
-							input(type="text" value="1")
-							button +
+							button.count__minus -
+							input.count__rez(type="text" value="1")
+							button.count__plus +
 					input.form-rent__field(type="text" placeholder="Имя *")
-
 				.form-rent__col
 					.calendar
-						input.form-rent__field(type="text" placeholder="Дата *")
+						input.form-rent__field.datapicker(type="text" placeholder="Дата *")
 						img(src="img/icon_date.png", alt="")
 					.back 
 						input#check(type="checkbox")
 						label.back__label(for="check") Обратный перелет
-					input.form-rent__field(type="text" placeholder="Телефон *")
+					input.form-rent__field.phone-mask(type="text" placeholder="Телефон *")
 					button.button.form-rent__button оставить заявку
 		.rent__content

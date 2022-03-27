@@ -1,0 +1,29 @@
+include ./../mixins/_servicePreview.pug
+
+section.services 
+	.container
+		.row 
+			.col 
+				include ./../layouts/_breadcrumbs.pug
+		.row 
+			.col 
+				.logo-titles.services__titles
+					img.logo-titles__img(src="img/icon_pic_plane.png", alt="icon_pic_plane")
+					h1.logo-titles__text услуги бизнес-авиации
+		.row 
+			.col 
+				.services__items
+					+servicePreview('services-1.jpg', 'Аренда частного самолета')
+					+servicePreview('services-2.jpg', 'Джет шеринг Jet Sharing')
+					+servicePreview('services-3.jpg', 'Аренда Яхт')
+					+servicePreview('services-4.jpg', 'Аренда вертолета')
+					+servicePreview('services-5.jpg', 'Медицинские рейсы')
+					+servicePreview('services-6.jpg', 'Emty legs')
+					+servicePreview('services-7.jpg', 'Консьерж-сервис')
+					+servicePreview('services-8.jpg', 'Аренда частного самолета')
+					.pdf-box
+						a.services__pdf.pdf(href="")
+							.pdf__text 
+								p.pdf__download Скачать презентацию
+								span.pdf__size PDF - 7.53 Mb
+							img.pdf__icon(src="img/icon-pdf.png", alt="icon-pdf")

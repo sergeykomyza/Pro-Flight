@@ -1,0 +1,70 @@
+include ./../mixins/_teamMember.pug
+include ./../mixins/_review.pug
+
+section.team 
+	.container 
+		.row
+			.col 
+				.logo-titles.service__titles
+					img.logo-titles__img(src="img/icon_pic_plane.png" alt="icon_pic_plane")
+					h4.logo-titles__text наша команда
+				.team__text 
+					p Команда ProFlight – это люди, зарекомендовавшие себя как профессионалы своего дела. Каждый человек в коллективе – не случаен. Нам удалось сложить идеальный пазл из высокого уровня компетентности, богатого опыта, креативности, юмора и находчивости. Среди наших сотрудников есть специалисты авиации, кандидаты наук, общественные деятели. Многие члены нашей компании работают в сфере более 10 лет, вместе с тем есть те, кто присоединился к команде недавно. Именно этот тандем позволяет нам использовать наработанный опыт, принимать взвешенные решения, но при этом сохранять свежий взгляд, гибкость и драйв.
+						br
+						| Наши сотрудники – люди широких взглядов и разносторонних увлечений: спорт, инновации, технологии, туризм. Благодаря этому мы легко находим общий язык с клиентами, нам интересно в коллективе. ProFlight – это в первую очередь люди, которые любят свое дело, с азартом берутся за каждую задачу и открыты новому опыту. Это позволяет компании занимать лидирующие позиции в отрасли, а коллективу – получать удовольствие и удовлетворение от работы.
+		.row 
+			.col 
+				.team__items 
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+					+teamMember('team-member.png', 'фамилия имя', 'Должность человека', 'personalemail@gmail.com')
+		.row 
+			.col 
+				.team__faq.faq
+					h5.faq__title faq
+					#accordion.accordion
+						.accordion-item
+							button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse1' aria-expanded='true' aria-controls='collapse1')
+								img(src="img/icon-faq.png", alt="icon-faq")
+								| Нужна ли справка об отсутствии коронавируса COVID-19 при перелете на самолете
+							#collapse1.accordion-collapse.collapse.show(aria-labelledby='heading1' data-bs-parent='#accordion')
+								.accordion-body
+									strong This is the first item's accordion body.
+									|  It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the 
+									code .accordion-body
+									| , though the transition does limit overflow.
+						.accordion-item
+							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse2' aria-expanded='false' aria-controls='collapse2')
+								img(src="img/icon-faq.png", alt="icon-faq")
+								| Нужна ли справка об отсутствии коронавируса COVID-19 при перелете на самолете
+							#collapse2.accordion-collapse.collapse(aria-labelledby='heading2' data-bs-parent='#accordion')
+								.accordion-body
+									strong This is the second item's accordion body.
+									|  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the 
+									code .accordion-body
+									| , though the transition does limit overflow.
+						.accordion-item
+							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse3' aria-expanded='false' aria-controls='collapse3')
+								img(src="img/icon-faq.png", alt="icon-faq")
+								| Нужна ли справка об отсутствии коронавируса COVID-19 при перелете на самолете
+							#collapse3.accordion-collapse.collapse(aria-labelledby='heading3' data-bs-parent='#accordion')
+								.accordion-body
+									strong This is the third item's accordion body.
+									|  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the 
+									code .accordion-body
+									| , though the transition does limit overflow.
+		.row 
+			.col 
+				.team__reviews.reviews 
+					.logo-titles.reviews__titles
+						img.logo-titles__img(src="img/icon_pic_plane.png" alt="icon_pic_plane")
+						h4.logo-titles__text клиенты о нашей работе
+					.reviews__items 
+						+review('ЯНВ 23, 2021', 'фамилия имя', 'Прекрасно организованный перелет в Грецию и обратно. Отличное сопровождение на всех этапах сотрудничества! Руководителю тоже все понравилось! Смело рекомендуем данного авиаброкера.')
+						+review('ЯНВ 23, 2021', 'фамилия имя', 'Прекрасно организованный перелет в Грецию и обратно. Отличное сопровождение на всех этапах сотрудничества! Руководителю тоже все понравилось! Смело рекомендуем данного авиаброкера.')
+						+review('ЯНВ 23, 2021', 'фамилия имя', 'Прекрасно организованный перелет в Грецию и обратно. Отличное сопровождение на всех этапах сотрудничества! Руководителю тоже все понравилось! Смело рекомендуем данного авиаброкера.')

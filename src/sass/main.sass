@@ -73,6 +73,7 @@ section
 
 .logo-titles
 	position: relative
+	z-index: 1
 	padding: 0 0 0 52px
 	&__img
 		position: absolute
@@ -96,6 +97,16 @@ section
 	left: 50%
 	transform: translateX(-50%)
 
+.breadcrumbs
+	padding: 75px 0 65px 0
+	&__list
+		display: flex
+	&__item
+		margin: 0 5px 0 0
+		&:last-child a
+			color: #d49d57
+	&__link
+
 // переопределить ширину контейнера bootstrap
 .container
 	max-width: 1124px
@@ -114,6 +125,9 @@ section
 
 /* ============================================================= HEADER */
 @import 'blocks/header'
+/* ============================================================= FOOTER */
+@import 'blocks/footer'
+
 /* ============================================================= SECTION */
 .home
 	height: 760px
@@ -177,5 +191,15 @@ section
 @import 'blocks/subscriptionTelegram'
 /* ============================================================= УМНЫЕ РЕШЕНИЯ*/
 @import 'blocks/solutions'
-/* ============================================================= FOOTER */
-@import 'blocks/footer'
+/* ============================================================= СТРАНИЦА УСЛУГИ*/
+@import 'blocks/services'
+/* ============================================================= СТРАНИЦА УСЛУГА*/
+@import 'blocks/service'
+/* ============================================================= СТРАНИЦА КОНТАКТЫ*/
+@import 'blocks/contacts'
+/* ============================================================= СТРАНИЦА О НАС*/
+@import 'blocks/about'
+/* ============================================================= СТРАНИЦА КАТАЛОГ*/
+@import 'blocks/catalog'
+/* ============================================================= СТРАНИЦА ХАРАКТЕРИСТИКИ САМОЛЕТА*/
+@import 'blocks/detail'

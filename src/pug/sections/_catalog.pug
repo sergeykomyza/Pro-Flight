@@ -1,0 +1,36 @@
+include ./../mixins/_aircraftSlide.pug
+
+section.catalog
+	.container 
+		.row 
+			.col 
+				include ./../layouts/_breadcrumbs.pug
+		.row 
+			.col 
+				.logo-titles.catalog__titles
+					img.logo-titles__img(src="img/icon_pic_plane.png", alt="icon_pic_plane")
+					h1.logo-titles__text каталог самолетов бизнес авиации
+		.row 
+			.col
+				form.search-plane(action="#") 
+					h6.search-plane__title Поиск по названию или бортовому номеру самолета
+					.search-plane__group 
+						input.search-plane__input(type="text" placeholder="Введите название или номер борта")
+						button.button.search-plane__button найти
+					.choose-jets
+						b Выбрать джет:
+						a(href="") Малые джеты 
+						a(href="") Средние джеты
+						a(href="") Крупные джеты
+		.row 
+			.col 
+				.catalog__items 
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
+				button.catalog__button.button--black показать еще

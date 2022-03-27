@@ -1,0 +1,7 @@
+mixin teamMember(foto, name, post, email)
+	article.team-member 
+		img.team-member__foto(src="img/" + foto, alt=name)
+		.team-member__info
+			h6.team-member__name #{name}
+			p.team-member__post #{post}
+			a.team-member__link(href="") #{email}  

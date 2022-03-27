@@ -1,0 +1,50 @@
+.services
+	padding: 0 0 100px 0
+	&__titles
+		margin: 0 0 75px 0
+	&__items
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		gap: 40px 70px
+
+.service-preview
+	background: #FFF
+	box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.1)
+	border-radius: 10px
+	overflow: hidden
+	&__img
+		width: 100%
+		height: 160px
+		object-fit: cover
+	&__info
+		display: flex
+		flex-direction: column
+		height: 160px
+		padding: 10px 30px 30px
+	&__name
+		padding: 0 30px
+		font-family: $font-2
+		font-size: 18px
+		text-align: center
+	&__button
+		@extend .post__button
+
+.pdf-box
+	display: flex
+	align-items: center
+	justify-content: center
+
+@media screen and ( max-width: 992px )
+	.services
+		&__items
+			grid-template-columns: repeat(2, 1fr)
+			gap: 20px
+
+@media screen and ( max-width: 565px )
+	.services
+		&__items
+			grid-template-columns: repeat(1, 1fr)
+			gap: 20px
+
+
+

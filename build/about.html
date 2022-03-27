@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- custom styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Site | О нас</title>
+  </head>
+  <body>
+    <!-- ======================================== HEADER-->
+    <header class="header">
+      <div class="container"> 
+        <div class="row">
+          <div class="col">
+            <div class="mobile-header"><a href="index.html"> <img class="mobile-header__logo" src="img/logo_header.png" alt="logo"/></a>
+              <button class="open-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="header__box">
+              <button class="close-menu visible-992"> <i class="fa-solid fa-xmark"></i></button><a class="header__logo" href="index.html"> <img src="img/logo_header.png" alt="logo"/></a>
+              <ul class="header__menu menu">
+                <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              </ul>
+              <div class="header__block"> 
+                <form class="header__language language" action="#">
+                  <select class="language__select" name="lang">
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                  </select>
+                </form>
+                <form class="header__search search" action="#"> 
+                  <input class="search__input" type="text" placeholder="Поиск"/>
+                  <button class="search__button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="header__social social"><a class="social__link" href="/"><img class="social__icon" src="img/icon_email.png" alt="icon_email"/></a><a class="social__link" href="/"><img class="social__icon" src="img/icon_telegram.png" alt="icon_telegram"/></a><a class="social__link" href="/"><img class="social__icon" src="img/icon_whatsapp.png" alt="icon_whatsapp"/></a></div><a class="header__phone" href="tel:+74955325533">+7 495 532-55-33</a>
+                <button class="button header__button"><img class="button__icon" src="img/icon_plane_white.png" alt="icon_plane_white"/><span class="button__text">забронировать самолет</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="about-page">
+      <!-- ======================================== УСЛУГА-->
+      <section class="service">
+        <div class="container"> 
+          <div class="row">
+            <div class="col">
+              <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list"> 
+                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Главная / </a></li>
+                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">Внутренняя страница</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="logo-titles service__titles"><img class="logo-titles__img" src="img/icon_pic_plane.png" alt="icon_pic_plane"/>
+                <h1 class="logo-titles__text">заголовок страницы</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="service__box"><img src="img/service.jpg" alt="service"/>
+                <article class="info">
+                  <h6 class="info__title">Короткая, но важная информация</h6>
+                  <div class="info__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                  </div>
+                  <div class="contacts__network network"> <a class="network__link" href="#"><i class="fa-brands fa-facebook-f"></i></a><a class="network__link" href="#"><i class="fa-brands fa-instagram"></i></a><a class="network__link" href="#"><i class="fa-brands fa-youtube"></i></a></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== КАК ЭТО РАБОТАЕТ-->
+      <section class="steps">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col">
+              <h3 class="steps__title">как это работает</h3>
+              <div class="steps__items"> 
+                <div class="step"> <img class="step__img" src="img/icon_working_1.png" alt="icon_working_1"/>
+                  <p class="step__text">Вы оставляете заявку любым удобным способом</p>
+                  <button class="step__button button">оставить заявку</button>
+                </div>
+                <div class="step"> <img class="step__img" src="img/icon_working_2.png" alt="icon_working_1"/>
+                  <p class="step__text">Наш менеджер связывается с Вами и уточняет все детали и пожелания</p>
+                </div>
+                <div class="step"> <img class="step__img" src="img/icon_working_3.png" alt="icon_working_1"/>
+                  <p class="step__text">Мы подбираем варианты. После вашего утверждения, организуем весь процесс перелета "Под ключ"</p>
+                </div>
+                <div class="step"> <img class="step__img" src="img/icon_working_4.png" alt="icon_working_1"/>
+                  <p class="step__text">Мы контролируем весь процесс перелета. Окутывая вас заботой и вниманием.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== НАША КОМАНДА-->
+      <section class="team"> 
+        <div class="container"> 
+          <div class="row">
+            <div class="col"> 
+              <div class="logo-titles service__titles"><img class="logo-titles__img" src="img/icon_pic_plane.png" alt="icon_pic_plane"/>
+                <h4 class="logo-titles__text">наша команда</h4>
+              </div>
+              <div class="team__text"> 
+                <p>Команда ProFlight – это люди, зарекомендовавшие себя как профессионалы своего дела. Каждый человек в коллективе – не случаен. Нам удалось сложить идеальный пазл из высокого уровня компетентности, богатого опыта, креативности, юмора и находчивости. Среди наших сотрудников есть специалисты авиации, кандидаты наук, общественные деятели. Многие члены нашей компании работают в сфере более 10 лет, вместе с тем есть те, кто присоединился к команде недавно. Именно этот тандем позволяет нам использовать наработанный опыт, принимать взвешенные решения, но при этом сохранять свежий взгляд, гибкость и драйв.<br/>Наши сотрудники – люди широких взглядов и разносторонних увлечений: спорт, инновации, технологии, туризм. Благодаря этому мы легко находим общий язык с клиентами, нам интересно в коллективе. ProFlight – это в первую очередь люди, которые любят свое дело, с азартом берутся за каждую задачу и открыты новому опыту. Это позволяет компании занимать лидирующие позиции в отрасли, а коллективу – получать удовольствие и удовлетворение от работы.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col"> 
+              <div class="team__items"> 
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+                      <article class="team-member"> <img class="team-member__foto" src="img/team-member.png" alt="фамилия имя"/>
+                        <div class="team-member__info">
+                          <h6 class="team-member__name">фамилия имя</h6>
+                          <p class="team-member__post">Должность человека</p><a class="team-member__link" href="">personalemail@gmail.com  </a>
+                        </div>
+                      </article>
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col"> 
+              <div class="team__faq faq">
+                <h5 class="faq__title">faq</h5>
+                <div class="accordion" id="accordion">
+                  <div class="accordion-item">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><img src="img/icon-faq.png" alt="icon-faq"/>Нужна ли справка об отсутствии коронавируса COVID-19 при перелете на самолете</button>
+                    <div class="accordion-collapse collapse show" id="collapse1" aria-labelledby="heading1" data-bs-parent="#accordion">
+                      <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><img src="img/icon-faq.png" alt="icon-faq"/>Нужна ли справка об отсутствии коронавируса COVID-19 при перелете на самолете</button>
+                    <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2" data-bs-parent="#accordion">
+                      <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3"><img src="img/icon-faq.png" alt="icon-faq"/>Нужна ли справка об отсутствии коронавируса COVID-19 при перелете на самолете</button>
+                    <div class="accordion-collapse collapse" id="collapse3" aria-labelledby="heading3" data-bs-parent="#accordion">
+                      <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col"> 
+              <div class="team__reviews reviews"> 
+                <div class="logo-titles reviews__titles"><img class="logo-titles__img" src="img/icon_pic_plane.png" alt="icon_pic_plane"/>
+                  <h4 class="logo-titles__text">клиенты о нашей работе</h4>
+                </div>
+                <div class="reviews__items"> 
+                        <article class="review"> 
+                          <time class="review__date">ЯНВ 23, 2021</time>
+                          <h6 class="review__name">фамилия имя</h6>
+                          <p class="review__text">Прекрасно организованный перелет в Грецию и обратно. Отличное сопровождение на всех этапах сотрудничества! Руководителю тоже все понравилось! Смело рекомендуем данного авиаброкера.</p>
+                          <button class="review__button">читать подробнее</button>
+                        </article>
+                        <article class="review"> 
+                          <time class="review__date">ЯНВ 23, 2021</time>
+                          <h6 class="review__name">фамилия имя</h6>
+                          <p class="review__text">Прекрасно организованный перелет в Грецию и обратно. Отличное сопровождение на всех этапах сотрудничества! Руководителю тоже все понравилось! Смело рекомендуем данного авиаброкера.</p>
+                          <button class="review__button">читать подробнее</button>
+                        </article>
+                        <article class="review"> 
+                          <time class="review__date">ЯНВ 23, 2021</time>
+                          <h6 class="review__name">фамилия имя</h6>
+                          <p class="review__text">Прекрасно организованный перелет в Грецию и обратно. Отличное сопровождение на всех этапах сотрудничества! Руководителю тоже все понравилось! Смело рекомендуем данного авиаброкера.</p>
+                          <button class="review__button">читать подробнее</button>
+                        </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ПОДПИШИСЬ НА НАШ ТЕЛЕГРАМ-->
+      <section class="telegram-subscription">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="telegram-subscription__box">
+                <h6 class="telegram-subscription__title">подпишись <br/>на наш телеграмм канал</h6>
+                <p class="telegram-subscription__text">с актуальными предложениями по <b>JET SHARING</b></p>
+                <button class="telegram-subscription__button button--black">подписаться</button><img class="telegram-subscription__img" src="img/subscription_pic.png" alt="subscription_pic"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== УМНЫЕ РЕШЕНИЯ-->
+      <section class="solutions"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <p class="solutions__overtitle">Ваш брокер в бизнес-авиации, <br/>который предлагает</p>
+              <h6 class="solutions__title">Умные Решения</h6>
+              <div id="rent-2">
+                <div class="home__rent rent">
+                  <div class="rent__header">
+                    <button class="rent__toggle"><img src="img/icon_chair.png" alt="icon_chair"/><span>арендовать кресло</span></button>
+                    <button class="rent__toggle"><img src="img/icon_plane_gold.png" alt="icon_plane_gold"/><span>арендовать самолет</span></button>
+                  </div>
+                  <div class="rent__contents">
+                    <div class="rent__content">
+                      <form class="form-rent" action="#">
+                        <div class="form-rent__col">
+                          <input class="form-rent__field" type="text" placeholder="Откуда *"/>
+                          <button class="form-rent__switch"> <img src="img/switch.png" alt="switch"/></button>
+                          <input class="form-rent__field" type="text" placeholder="Куда *"/>
+                          <div class="form-rent__field pass">Пассажиры
+                            <div class="count"> 
+                              <button class="count__minus">-</button>
+                              <input class="count__rez" type="text" value="1"/>
+                              <button class="count__plus">+</button>
+                            </div>
+                          </div>
+                          <input class="form-rent__field" type="text" placeholder="Имя *"/>
+                        </div>
+                        <div class="form-rent__col">
+                          <div class="calendar">
+                            <input class="form-rent__field datapicker" type="text" placeholder="Дата *"/><img src="img/icon_date.png" alt=""/>
+                          </div>
+                          <div class="back"> 
+                            <input id="check" type="checkbox"/>
+                            <label class="back__label" for="check">Обратный перелет</label>
+                          </div>
+                          <input class="form-rent__field phone-mask" type="text" placeholder="Телефон *"/>
+                          <button class="button form-rent__button">оставить заявку</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="rent__content"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ======================================== FOOTER-->
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col"> 
+            <div class="footer__box">
+              <div class="footer__present"> <img class="footer__logo" src="img/logo_footer.png" alt="logo_footer"/>
+                <p class="footer__text">Ваш брокер в бизнес-авиации №1 Организуем и решим авиационные задачи любой сложности.</p>
+                <div class="footer__social social"> <a class="social__link" href="/"><img class="social__icon" src="img/icon_telegram.png" alt="icon_telegram"/></a><a class="social__link" href="/"><img class="social__icon" src="img/icon_whatsapp.png" alt="icon_whatsapp"/></a><a class="footer__phone" href="tel:+74955325533">+7 495 532-55-33</a></div>
+                <div class="footer__adress">Москва, ул. Академика Королева, 15 Офис 157</div>
+              </div>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="about.html">о нас</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="services.html">услуги</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="flot.html">ваш флот</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="direction.html">направления</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="information.html">информация</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">контакты</a></li>
+              </ul>
+              <ul class="services-menu">
+                <li class="services-menu__title">Услуги:</li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link1.html">Jet Sharing</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link2.html">Аренда частного самолета</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link3.html">Корпоративный чартер</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link4.html">Заказ чартера</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link5.html">Государственным корпорациям</a></li>
+                <li class="services-menu__item"><a class="services-menu__link" href="link6.html">VIP чартер</a></li>
+              </ul>
+              <button class="button footer__button"><img class="button__icon" src="img/icon_plane_white.png" alt="icon_plane_white"/><span class="button__text">забронировать самолет</span></button>
+            </div>
+            <div class="network"> <a class="network__link" href="#"><i class="fa-brands fa-facebook-f"></i></a><a class="network__link" href="#"><i class="fa-brands fa-instagram"></i></a><a class="network__link" href="#"><i class="fa-brands fa-youtube"></i></a></div>
+            <div class="pays">
+              <p class="pays__title">принимаем к оплате:</p>
+              <div class="pays__items"><a class="pays__link" href="#"><img src="img/icon_pay_1.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_2.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_3.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_4.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_5.png" alt="icon_pay_1"/></a><a class="pays__link" href="#"><img src="img/icon_pay_6.png" alt="icon_pay_1"/></a></div>
+            </div>
+            <ul class="technical-menu">
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Политика конфиденциальности</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Согласие на обработку персональных данных</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Пользовательское соглашение</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Условия договора</a></li>
+              <li class="technical-menu__item"><a class="technical-menu__link" href="#">Карта сайта</a></li>
+              <li class="technical-menu__item"><span class="technical-menu__link">Разработка и продвижение сайта студия <br/><a href="#">
+                     <img src="img/logo_scrum.png" alt="logo_scrum"></a></span></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col"><span class="rights">© 2012-2022 Pro-Flight.ru</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======================================== SCRIPTS-->
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- fontawesome-->
+    <script src="https://kit.fontawesome.com/b8c912bc8c.js" crossorigin="anonymous"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- inputmask -->
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- yandex map-->
+    <!-- scripts-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

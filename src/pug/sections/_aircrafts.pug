@@ -1,3 +1,5 @@
+include ./../mixins/_aircraftSlide.pug
+
 section.aircrafts
 	img.decor(src="img/lines.png", alt="lines")
 	.container 
@@ -12,5 +14,5 @@ section.aircrafts
 					+aircraftSlide('cessna citation cc', 'Небольшое описание самолета и возможностей', 'rent_3.png', '6019', '10 - 13', 'Heavy jet')
 					+aircraftSlide('embraer legacy', 'Небольшое описание самолета и возможностей', 'rent_4.png', '6019', '10 - 13', 'Heavy jet')
 					+aircraftSlide('challenger', 'Небольшое описание самолета и возможностей', 'rent_1.png', '6019', '10 - 13', 'Heavy jet')
-				button.aircrafts__button.button--black смотреть весь флот
+				a.aircrafts__button.button--black(href="catalog.html") смотреть весь флот
 

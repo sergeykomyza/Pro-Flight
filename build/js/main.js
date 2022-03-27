@@ -5,10 +5,10 @@
 // }
 
 // ================================================== исключение по селектору
-const body = document.querySelector('body');
-if (!body.querySelector('.main-page')) {
-    body.style.padding = '300px 0 0 0';
-}
+// const body = document.querySelector('body');
+// if (!body.querySelector('.main-page')) {
+//     body.style.padding = '300px 0 0 0';
+// }
 
 // ================================================== МЕНЮ
 document.addEventListener('DOMContentLoaded', function(){
@@ -35,12 +35,13 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 });
 // ================================================== ТАБЫ
+document.addEventListener('DOMContentLoaded', function(){
+
 const tabs = (tabBoxSelector, headerSelector, tabSelector, contentSelector, activeClass) => {
     const tabBox = document.querySelector(tabBoxSelector),
         header = tabBox.querySelector(headerSelector),
         tab = tabBox.querySelectorAll(tabSelector),
         content = tabBox.querySelectorAll(contentSelector);
-
     function hideContent() {
         content.forEach(item => {
             item.style.display = 'none';
@@ -49,12 +50,10 @@ const tabs = (tabBoxSelector, headerSelector, tabSelector, contentSelector, acti
             item.classList.remove(activeClass);
         });
     }
-
     function showContent(i) {
         content[i].style.display = 'block';
         tab[i].classList.add(activeClass);
     }
-
     header.addEventListener('click', (e) => {
         e.preventDefault();
         const target = e.target;
@@ -69,37 +68,47 @@ const tabs = (tabBoxSelector, headerSelector, tabSelector, contentSelector, acti
             });
         }
     });
-
     hideContent();
     showContent(0); // в скобках указываем индекс таба, который хотим видеть активным
-
 }
 
-tabs('#rent-0', '.tickets__header', '.tickets__toggle', '.tickets__content', 'active');
-tabs('#rent-1', '.rent__header', '.rent__toggle', '.rent__content', 'active');
-tabs('#rent-2', '.rent__header', '.rent__toggle', '.rent__content', 'active');
+if(document.querySelector('#rent-0')){
+    tabs('#rent-0', '.tickets__header', '.tickets__toggle', '.tickets__content', 'active');
+    tabs('#rent-1', '.rent__header', '.rent__toggle', '.rent__content', 'active');
+}
+if(document.querySelector('#rent-2')){
+    tabs('#rent-2', '.rent__header', '.rent__toggle', '.rent__content', 'active');
+}
+if(document.querySelector('#jet')){
+    tabs('#jet', '.jet__header', '.jet__toggle', '.jet__content', 'active');
+}
 
-// ================================================== ПРОКРУТКА, ШАПКА
-// document.addEventListener('DOMContentLoaded', function () {
-//     // СКРОЛЛ К НУЖНОЙ СЕКЦИИ ПО КЛИКУ НА ПУНКТАХ МЕНЮ
-//     $('.menu__link').click(function () {
-//         var scroll_elem = $(this).attr('href');
-//         $('html, body').animate({
-//             scrollTop: $(scroll_elem).offset().top
-//         }, 1000);
-//     });
-//     // ДОБАВЛЯЕМ АКТИВНЫЙ КЛАСС ШАПКЕ
-//     function headerActiveToggle() {
-//         const scrollSize = window.pageYOffset
-//         scrollSize > 1 ? header.classList.add('active') : header.classList.remove('active')
-//     }
-//     window.addEventListener('load', headerActiveToggle) // ПРИ ПЕРЕЗАГРУЗКЕ СТРАНИЦЫ ЕСЛИ СТРАНИЦА УЖЕ ПРОСКРОЛЛЕНА
-//     window.addEventListener('scroll', headerActiveToggle) // ПРИ СКРОЛЛЕ
-// });
+});
 
+// ================================================== + - КОЛИЧЕСТВО ПАССАЖИРОВ
+document.addEventListener('DOMContentLoaded', function(){
+    const count = document.querySelectorAll('.count')
+    count.forEach(item => {
+        const plus = item.querySelector('.count__plus')
+        const minus = item.querySelector('.count__minus')
+        const rez = item.querySelector('.count__rez')
+        item.addEventListener('click', function(e){
+            e.preventDefault()
+            let target = e.target
+            const itsPlus = target == plus
+            const itsMinus = target == minus
+            if(itsPlus){
+                rez.value ++
+            }
+            if(itsMinus && rez.value > 1){
+                rez.value --
+            }
+        })
+    })
+});
 // ================================================== МАСКА ДЛЯ ИНПУТОВ (https://github.com/RobinHerbots/Inputmask)
 $(document).ready(function () {
-    $(".phone").inputmask({
+    $(".phone-mask").inputmask({
         mask: "+7 999 999 99 99",
         clearIncomplete: true
     });
@@ -124,7 +133,6 @@ $(document).ready(function () {
         'placeholder': 'dd/mm/yyyy'
     });
 });
-
 // ================================================== СЛАЙДЕРЫ (https://kenwheeler.github.io/slick/)
 document.addEventListener('DOMContentLoaded', function () {
     $('.aircrafts__slider').slick({
@@ -152,6 +160,26 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         ]
     });
+
+    $('.jet-slider__carousel').slick({
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/icon_arrow_slider.png" /></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/icon_arrow_slider.png" /></button>'
+    });
+    $(".jet-slider__arrow--left").on("click", function () {
+        $('.jet-slider__carousel').slick("slickPrev")
+    });
+    $(".jet-slider__arrow--right").on("click", function () {
+        $('.jet-slider__carousel').slick("slickNext")
+    });
+    $(".jet-slider__carousel").on('afterChange', function(event, slick, currentSlide){
+        $(".count-slide__cur").text(currentSlide + 1);
+    });
+
     // пользовательская навигация
     // var dot = $(".dots__item");
     // $('.slider').on("beforeChange", function (event, slick, currentSlide, nextSlide) {
@@ -161,15 +189,33 @@ document.addEventListener('DOMContentLoaded', function () {
     //     var i = dot.index(this);
     //     $('.slider').slick("slickGoTo", i)
     // });
-    // $(".prev").on("click", function () {
-    //     $('.slider').slick("slickPrev")
-    // });
-    // $(".next").on("click", function () {
-    //     $('.slider').slick("slickNext")
-    // });
+
+
 
 });
-// ================================================== 
+// ================================================== DATAPICKER (https://snipp.ru/jquery/jquery-ui-datepicker)
+/* Локализация datepicker */
+$.datepicker.regional['ru'] = {
+	closeText: 'Закрыть',
+	prevText: 'Предыдущий',
+	nextText: 'Следующий',
+	currentText: 'Сегодня',
+	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+	weekHeader: 'Не',
+	dateFormat: 'dd.mm.yy',
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['ru']);
+$(function(){
+	$(".datapicker").datepicker();
+});
 // ================================================== 
 // ================================================== 
 // ================================================== 
@@ -180,34 +226,36 @@ document.addEventListener('DOMContentLoaded', function () {
 // ================================================== 
 
 // ================================================== КАРТА, ОТЛОЖЕННАЯ ЗАГРУЗКА (ЧТОБЫ УЛУЧШИТЬ ПОКАЗАТЕЛИ - PageSpeed Insights)
-// document.addEventListener('DOMContentLoaded', function () {
-//     setTimeout(function() {
-//         var headID = document.getElementsByTagName("body")[0];         
-//         var newScript = document.createElement('script');
-//         newScript.type = 'text/javascript';
-//         newScript.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
-//         headID.appendChild(newScript);
-//     }, 3000);
-//     setTimeout(function() {
-//         var myMap = new ymaps.Map('map', {
-//             center: [48.570612, 39.341628],
-//             zoom: 16
-//         }, {
-//             searchControlProvider: 'yandex#search'
-//         }),
-//             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-//                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-//             ),
-//             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-//                 hintContent: 'г. Луганск, кв. Лиховида 1',
-//                 balloonContent: 'г. Луганск, кв. Лиховида 1'
-//             }, {
-//                 iconLayout: 'default#image',
-//                 iconImageHref: 'img/logo_sign.png',
-//                 iconImageSize: [40, 45],
-//                 iconImageOffset: [-5, -38]
-//             })
-//         myMap.geoObjects
-//             .add(myPlacemark)
-//     }, 4000);
-// });
+document.addEventListener('DOMContentLoaded', function () {
+    if(document.querySelector('.contacts-page')){
+        setTimeout(function() {
+            var headID = document.getElementsByTagName("body")[0];         
+            var newScript = document.createElement('script');
+            newScript.type = 'text/javascript';
+            newScript.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
+            headID.appendChild(newScript);
+        }, 1000);
+        setTimeout(function() {
+            var myMap = new ymaps.Map('map', {
+                center: [55.751898, 37.585799],
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Москва, Новый Арбат, 21',
+                    balloonContent: 'Москва, Новый Арбат, 21'
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'img/logo_header.png',
+                    iconImageSize: [80, 25],
+                    iconImageOffset: [-5, -38]
+                })
+            myMap.geoObjects
+                .add(myPlacemark)
+        }, 2000);
+    }
+});

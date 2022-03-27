@@ -7,8 +7,9 @@
 		padding: 106px 0 0 0
 	&__content
 		position: relative
+	&__titles
+		margin: 0 0 40px 0
 	&__list
-		margin: 43px 0 0 0
 		padding: 0 0 0 52px
 	&__item
 		position: relative
@@ -30,6 +31,17 @@
 		position: absolute
 		z-index: 1
 		left: -60px
+	&__woman
+		position: absolute
+		left: 50px
+	&__pdf
+		position: absolute
+		right: 8px
+		bottom: -145px
+	&-section
+		height: 735px
+		background: none
+
 
 .pic
 	position: absolute
@@ -53,9 +65,6 @@
 	&__img
 
 .pdf
-	position: absolute
-	right: 8px
-	bottom: -145px
 	display: flex
 	align-items: center
 	width: 245px
@@ -80,13 +89,16 @@
 			font-size: 15px
 			br 
 				display: none
+		&__list
 		&__content
 			margin: 0 0 20px 0
 		&__img
 			display: none
 		&__plane
 			display: none
+		&__woman
+			display: none
+		&__pdf
+			position: static
 	.pic
 		display: none
-	.pdf
-		position: static

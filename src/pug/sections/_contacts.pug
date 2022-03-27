@@ -1,0 +1,36 @@
+section.contacts 
+	.container
+		.row 
+			.col 
+				include ./../layouts/_breadcrumbs.pug
+		.row 
+			.col 
+				.logo-titles.contacts__titles
+					img.logo-titles__img(src="img/icon_pic_plane.png", alt="icon_pic_plane")
+					h1.logo-titles__text контакты
+		.row 
+			.col 
+				.contacts__box 
+					#map.contacts__map
+					.contacts-data 
+						.contacts-data__item 
+							img.contacts-data__icon(src="img/icon-marker.png", alt="icon-marker")
+							span.contacts-data__val Москва, Новый Арбат, 21
+						.contacts-data__item 
+							img.contacts-data__icon(src="img/icon-phone.png", alt="icon-phone")
+							a.contacts-data__val(href="tel:+74955325533") +7 495 532-55-33
+						.contacts-data__item 
+							img.contacts-data__icon(src="img/icon-email.png", alt="icon-email")
+							a.contacts-data__val(href="mailto:info@pro-flight.ru") info@pro-flight.ru
+						.contacts-data__item 
+							img.contacts-data__icon(src="img/icon-ofice.png", alt="icon-ofice")
+							span.contacts-data__val Время работы офиса:
+								br
+								|В будни с 10:00 до 18:00
+						.contacts__network.network 
+							a.network__link(href="#")
+								i.fa-brands.fa-facebook-f
+							a.network__link(href="#")
+								i.fa-brands.fa-instagram
+							a.network__link(href="#")
+								i.fa-brands.fa-youtube

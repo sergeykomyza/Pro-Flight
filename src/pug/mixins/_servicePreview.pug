@@ -1,0 +1,6 @@
+mixin servicePreview(img, name)
+	article.service-preview 
+		img.service-preview__img(src="img/" + img, alt="")
+		.service-preview__info
+			h6.service-preview__name #{name}
+			a.service-preview__button(href="service.html") подробнее
